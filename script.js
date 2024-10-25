@@ -13,7 +13,7 @@ const questionCounterElement = document.getElementById("question-counter"); // G
 const chartContainer = document.getElementById("chart-container"); // Get the chart container
 
 async function startQuiz() {
-    selectedQuestions = getRandomQuestions(allQuestions, 10); // Select random questions
+    selectedQuestions = getRandomQuestions(allQuestions, 40); // Select random questions
     currentQuestionIndex = 0;
     score = 0;
     nextButton.textContent = "Neste"; // Reset button text
