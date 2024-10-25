@@ -13,7 +13,7 @@ const questionCounterElement = document.getElementById("question-counter"); // G
 const chartContainer = document.getElementById("chart-container"); // Get the chart container
 
 async function startQuiz() {
-    selectedQuestions = getRandomQuestions(allQuestions, 40); // Select random questions
+    selectedQuestions = getRandomQuestions(allQuestions, 10); // Select random questions
     currentQuestionIndex = 0;
     score = 0;
     nextButton.textContent = "Neste"; // Reset button text
@@ -106,7 +106,8 @@ function resetButtons() {
 
 function showResults() {
     previousScores.push(score); // Store the score
-    questionElement.textContent = "Exam fullført! Du fikk " + score + " av " + selectedQuestions.length + " riktige.";
+    const grade = getGrade(score, selectedQuestions.length); // Calculate the grade
+    questionElement.textContent = `Eksamen fullført! \n Du fikk ${score} av ${selectedQuestions.length} riktige. ${grade}`; // Display score and grade
     optionsElement.innerHTML = "";
     feedbackElement.textContent = ""; // Clear feedback for results display
     nextButton.style.display = "block"; // Show the next button
@@ -133,7 +134,7 @@ function getGrade(score, total) {
     } else {
         grade = "F";
     }
-    return `Karakter: ${grade} (${percentage.toFixed(2)}%)`;
+    return `Karakter: ${grade}`;
 }
 
 // Chart.js setup
