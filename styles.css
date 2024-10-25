@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6d7e3;
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    height: auto; /* Take full height of the viewport */
+    margin-top: 7%;
+    text-align: left;
+}
+
+.container {
+    width: 100%; /* Set width to 100% of its parent */
+    max-width: 600px; /* Limit max width to 600px */
+    height: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Add overflow to handle content */
+    position: relative; /* For positioning the question counter */
+}
+
+
+#options {
+    margin-bottom: 20px;
+    margin-top: 30px; 
+}
+
+#question {
+    font-size: 18pt;
+    padding-top: 50px;
+    text-align: left;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    background: white;
+    color: black; /* Keep text color black */
+    border: 1.5px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 10px; /* Reduced spacing between buttons */
+    transition: background 0.3s, border 0.3s; /* Smooth transitions */
+}
+
+#next-button {
+    width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #edefff;
+    float: right;
+}
+
+.button-icon {
+    width: 100%; /* Juster størrelsen på bildet om nødvendig */
+    height: auto;
+}
+
+button:hover {
+    border-color: rgb(124, 124, 124);
+}
+
+.correct {
+    background: #a3f0a3; /* Green for correct answers */
+    border-color: #a3f0a3;
+    color: black; /* Keep text color black */
+}
+
+.incorrect {
+    background: #ff918d; /* Red for incorrect answers */
+    border-color: #ff918d;
+    color: black; /* Text color */
+}
+
+#question-counter {
+    position: absolute; /* Position it absolutely in the container */
+    right: 20px; /* Right margin */
+    font-size: 14px; /* Smaller font size */
+    color: gray; /* Gray color for the counter */
+}
+
+#tittel {
+    position: absolute; /* Position it absolutely in the container */
+    top: 10px; /* Top margin */
+    left: 20px; /* Right margin */
+    font-size: 14px; /* Smaller font size */
+    color: gray; /* Gray color for the counter */
+}
+
+#feedback {
+    margin-top: 40px; /* Add space above feedback */
+    font-size: 16px; /* Font size for feedback */
+    color: black; /* Ensure feedback text is visible */
+}
+
+#myChart {
+    margin-bottom: 20px;
+}
+
+#chart-container {
+    display: none; /* Hide chart by default */
+    margin-top: 20px; /* Add some space above the chart */
+}

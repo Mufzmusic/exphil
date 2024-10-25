@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exphil Multiple Choice Exam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="questions.js" defer></script> <!-- This should be first -->
+    <script src="script.js" defer></script>    <!-- This should be second -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="question-container">
+            <p id="tittel">Erlends Exphil for humanoria og Estetiske fag</p>
+            <div id="question-counter"></div> <!-- Counter for questions -->
+            <div id="question"></div>
+            <div id="options"></div>
+            <p id="feedback"></p>
+            <div id="chart-container">
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </div>
+            <div>
+            <button id="next-button" style="display: none;">Neste</button>
+            
+        </div>
+    </div>
+</body>
+</html>
