@@ -218,10 +218,10 @@ button:hover {
 
 /* Green for correct answers */
 .correct-answer {
-    background-color: #6bc26b;
+    background-color: #b7ffb7;
 }
 
 /* Red for incorrect answers */
 .incorrect-answer {
-    background-color: #e57373;
+    background-color: #ffaba9;
 }
