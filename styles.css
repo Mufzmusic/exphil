@@ -6,17 +6,92 @@ body {
     display: flex; /* Enable flexbox for centering */
     justify-content: center; /* Center horizontally */
     height: auto; /* Take full height of the viewport */
-    margin-top: 7%;
+    margin-top: 4%;
     text-align: left;
 }
+
+/* Start screen styles */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements */
+    margin-bottom: 20px;
+}
+
+
+h1{
+    padding-top: 30px;
+}
+
+.ti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+#start-screen .ti button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(255, 255, 255);
+    width: auto;
+    color: black;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s, border 0.3s;
+}
+
+#start-button{
+    position: relative;
+    width: auto;
+    max-width: 150px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    border: none;
+    color: #f9f9f9;
+    background-color: #6417ff;
+    margin-top: 20px;
+}
+
+#start-button:hover{
+    transition: 0.2s;
+    background-color: #7530ff;
+}
+
+
+#start-screen .ti button:hover {
+    transition: 0.3s;
+    filter: drop-shadow(2px 2px #712aff);
+}
+
+/* Add green background when selected */
+#start-screen .ti .selected {
+    background-color: #e4e6ff; /* Light blue for selected */
+    filter: drop-shadow(2px 2px #712aff); /* Keep shadow effect */
+}
+
+
+#chapter-selection button.selected {
+    background-color: #e4e6ff; /* Light blue for selected */
+    filter: drop-shadow(2px 2px #712aff); /* Keep shadow effect */
+}
+
 
 .container {
     width: 100%; /* Set width to 100% of its parent */
     max-width: 600px; /* Limit max width to 600px */
     height: auto;
-    background: white;
+    background: rgb(240, 240, 240);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto; /* Add overflow to handle content */
     position: relative; /* For positioning the question counter */
@@ -39,23 +114,27 @@ button {
     width: 100%;
     padding: 10px;
     padding-left: 20px;
+    padding-right: 20px;
     background: white;
-    color: black; /* Keep text color black */
-    border: 1.5px solid #ccc; /* Light gray border */
-    border-radius: 5px;
+    color: black;
+    border: 1.5px solid #fff; /* Light gray border */
+    border-radius: 20px;
     cursor: pointer;
     text-align: left;
-    margin-bottom: 10px; /* Reduced spacing between buttons */
-    transition: background 0.3s, border 0.3s; /* Smooth transitions */
+    margin-bottom: 10px;
+    transition: border-color 0.2s; /* Smooth transition for border color */
 }
 
 #next-button {
+    display: block;
     width: auto;
     padding-right: 30px;
+    margin-top: 20px;
     padding-left: 30px;
-    background-color: #edefff;
+    background-color: #ffffff;
     float: right;
 }
+
 
 .button-icon {
     width: 100%; /* Juster størrelsen på bildet om nødvendig */
@@ -63,19 +142,19 @@ button {
 }
 
 button:hover {
-    border-color: rgb(124, 124, 124);
+    border-color: #af99da; /* Darker gray on hover for visibility */
 }
 
 .correct {
-    background: #a3f0a3; /* Green for correct answers */
-    border-color: #a3f0a3;
-    color: black; /* Keep text color black */
+    background: #b7ffb7; /* Green for correct answers */
+    border-color: #6bc26b; /* Darker green border for correct answers */
+    color: black;
 }
 
 .incorrect {
-    background: #ff918d; /* Red for incorrect answers */
-    border-color: #ff918d;
-    color: black; /* Text color */
+    background: #ffaba9; /* Red for incorrect answers */
+    border-color: #e57373; /* Darker red border for incorrect answers */
+    color: black;
 }
 
 #question-counter {
@@ -106,4 +185,43 @@ button:hover {
 #chart-container {
     display: none; /* Hide chart by default */
     margin-top: 20px; /* Add some space above the chart */
+}
+
+/* Progress bar styles */
+#progress-bar {
+    display: flex;
+    gap: 1px;
+    margin-top: 20px;
+    height: 20px;
+    justify-content: flex-start; /* Align items to start from the left */
+}
+
+/* Default styling for each question block */
+.question-block {
+    flex: 1;
+    background-color: #e0e0e0; /* Grå bakgrunn som standard */
+    border-radius: 1px;
+    transition: background-color 0.3s;
+}
+
+/* Style for the first block */
+.question-block:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Style for the last block */
+.question-block:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Green for correct answers */
+.correct-answer {
+    background-color: #6bc26b;
+}
+
+/* Red for incorrect answers */
+.incorrect-answer {
+    background-color: #e57373;
 }

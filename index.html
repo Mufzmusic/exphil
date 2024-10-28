@@ -5,25 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exphil Multiple Choice Exam</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="questions.js" defer></script> <!-- This should be first -->
+    <script src="questionskat.js" defer></script> <!-- This should be first -->
     <script src="script.js" defer></script>    <!-- This should be second -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-        <div id="question-container">
+        <!-- Start screen -->
+        <div id="start-screen">
             <p id="tittel">Erlends EXPH0100</p>
-            <div id="question-counter"></div> <!-- Counter for questions -->
+            <h1>EXPH0100: Exphil for humanoria og estetiske fag</h1>
+            <p>Antall spørsmål:</p>
+            <div class="ti">
+                <button class="selected" onclick="setQuestionCount(40, this)">40 Spørsmål</button>
+                <button onclick="setQuestionCount(10, this)">10 Spørsmål</button>
+            </div>
+            <p>Kapitler:</p>
+            <!-- Chapter selection buttons -->
+            <div id="chapter-selection" class="ti">
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Argumentasjonsteori">Argumentasjonsteori</button>
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Vitenskapsfilosofi">Vitenskapsfilosofi</button>
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Humaniora">Humaniora</button>
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Natur-, menneske- og teknologisyn">Natur-, menneske- og teknologisyn</button>
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Etikk og politisk filosofi">Etikk og politisk filosofi</button>
+                <button onclick="toggleChapterSelection(this)" class="selected" data-chapter="Estetikk">Estetikk</button>
+            </div>
+            <button id="start-button" onclick="startQuiz()" disabled>Start Prøven</button>
+        </div>
+
+        <!-- Question screen (hidden initially) -->
+        <div id="question-container" style="display: none;">
+            <p id="current-category" style="position: absolute; top: 10px; left: 20px; font-size: 14px; color: gray;">Kategori</p>
+            <div id="question-counter"></div>
             <div id="question"></div>
             <div id="options"></div>
+            <div id="progress-bar" class="progress-bar"></div>
             <p id="feedback"></p>
             <div id="chart-container">
                 <canvas id="myChart" width="400" height="200"></canvas>
             </div>
-            <div>
             <button id="next-button" style="display: none;">Neste</button>
-            
         </div>
+        
     </div>
+    
 </body>
 </html>
