@@ -1,5 +1,115 @@
 const allQuestions = {
     "Argumentasjonsteori": [
+            {
+                question: "Hva er den primære forskjellen mellom deduktiv og induktiv argumentasjon?",
+                options: [
+                    "Deduktiv argumentasjon sikter mot sannsynliggjøring, induktiv mot sikkerhet",
+                    "Deduktiv argumentasjon sikter mot å garantere konklusjonens riktighet, mens induktiv sannsynliggjør konklusjonen",
+                    "Deduktiv argumentasjon er uavhengig av premissene, mens induktiv avhenger av dem",
+                    "Induktiv argumentasjon garanterer riktighet, mens deduktiv sannsynliggjør konklusjonen"
+                ],
+                answer: 1,
+                feedback: "Deduktiv argumentasjon garanterer riktighet gitt sanne premisser, mens induktiv sannsynliggjør konklusjonen."
+            },
+            {
+                question: "Hva er modus tollens i deduktiv logikk?",
+                options: [
+                    "En argumentasjonsform som konkluderer med 'p' hvis 'q' er sann",
+                    "En form der konklusjonen er sann dersom alle premissene er sanne",
+                    "En deduktivt gyldig form der konklusjonen trekkes basert på negasjonen av 'q'",
+                    "En gyldig logisk form som alltid konkluderer med at 'p' er sant"
+                ],
+                answer: 2,
+                feedback: "Modus tollens konkluderer at 'p' er falsk dersom 'q' er falsk i formen: Hvis p, så q. Ikke q. Altså ikke p."
+            },
+            {
+                question: "Hva karakteriserer et deskriptivt standpunkt?",
+                options: [
+                    "Det gir en vurdering eller anbefaling",
+                    "Det beskriver en tilstand eller faktum uten vurdering",
+                    "Det oppfordrer til en spesifikk handling",
+                    "Det gir en moralsk vurdering basert på fakta"
+                ],
+                answer: 1,
+                feedback: "Deskriptive standpunkter beskriver en tilstand eller faktum uten å gi en vurdering eller anbefaling."
+            },
+            {
+                question: "Hva er en normativ påstand?",
+                options: [
+                    "En påstand som beskriver hvordan ting faktisk er",
+                    "En påstand som oppfordrer eller vurderer noe som bra eller dårlig",
+                    "En påstand som gir en nøytral beskrivelse av situasjonen",
+                    "En påstand som gir presise data uten vurdering"
+                ],
+                answer: 1,
+                feedback: "En normativ påstand gir en vurdering eller oppfordrer til en bestemt handling."
+            },
+            {
+                question: "Hva skiller en induktiv syllogisme fra en induktiv generalisering?",
+                options: [
+                    "Induktiv syllogisme sikter mot universelle utsagn, generalisering mot partikulære utsagn",
+                    "Induktiv syllogisme baserer seg på en generell observasjon, generalisering på en spesifikk",
+                    "Induktiv syllogisme trekker konklusjoner om enkeltindivider, mens generaliseringer trekker generelle konklusjoner",
+                    "Induktiv syllogisme er alltid logisk gyldig, mens induktiv generalisering er sannsynlig"
+                ],
+                answer: 2,
+                feedback: "Induktiv syllogisme trekker konklusjoner om enkeltindivider basert på generell kunnskap, mens induktiv generalisering trekker generelle konklusjoner."
+            },
+            {
+                question: "Hva menes med relevans i argumentasjonsteori?",
+                options: [
+                    "Hvorvidt argumentet kan overbevise et publikum",
+                    "I hvilken grad argumentet er i tråd med fakta",
+                    "Argumentets betydning for å støtte eller svekke standpunktet",
+                    "Hvorvidt argumentet er kjent blant publikum"
+                ],
+                answer: 2,
+                feedback: "Relevans refererer til i hvilken grad argumentet støtter eller svekker standpunktet direkte."
+            },
+            {
+                question: "Hva kjennetegner et sammensatt argument?",
+                options: [
+                    "To eller flere argumenter som sammen støtter hverandre og styrker relevansen for standpunktet",
+                    "Flere uavhengige argumenter som har samme tema",
+                    "Argumenter som er riktige, men ikke nødvendigvis relevante",
+                    "En argumentasjonsrekke der konklusjonen følger logisk av premissene"
+                ],
+                answer: 0,
+                feedback: "Sammensatte argumenter består av to eller flere argumenter som støtter hverandre, og slik styrker relevansen for standpunktet."
+            },
+            {
+                question: "Hvordan kan indirekte argumenter bidra til riktighet i et hovedargument?",
+                options: [
+                    "Ved å svekke logikken i det primære argumentet",
+                    "Ved å overbevise publikum emosjonelt",
+                    "Ved å styrke påstandene som direkte støtter hovedargumentet",
+                    "Ved å gi en alternativ forklaring som svekker hovedargumentet"
+                ],
+                answer: 2,
+                feedback: "Indirekte argumenter støtter andre argumenter direkte, noe som kan styrke hovedargumentets riktighet."
+            },
+            {
+                question: "Hva innebærer abduksjon som en type argumentasjon?",
+                options: [
+                    "En form for deduktiv logikk som gir absolutte konklusjoner",
+                    "En slutning til beste forklaring basert på tilgjengelige data",
+                    "En metode for å gi en vurdering basert på normativ logikk",
+                    "En generalisering basert på omfattende observasjoner"
+                ],
+                answer: 1,
+                feedback: "Abduksjon er en argumentasjonstype som trekker slutninger til beste forklaring basert på de tilgjengelige dataene."
+            },
+            {
+                question: "Hva er modus ponens?",
+                options: [
+                    "En argumentasjonsform der sannheten til premissene sannsynliggjør konklusjonen",
+                    "En deduktiv form der premissene garanterer konklusjonen hvis de er sanne",
+                    "En logisk form som gjør det mulig å trekke alternative konklusjoner",
+                    "En induktiv form som vektlegger relevans over riktighet"
+                ],
+                answer: 1,
+                feedback: "Modus ponens er en deduktivt gyldig argumentasjonsform der sannheten til premissene garanterer konklusjonen."
+            },        
         {
             question: "Det følgende er standpunktet S i et resonnement: \"Den industrielle revolusjonen hadde en avgjørende innvirkning på samfunnsstrukturen.\" Det følgende argumentet A er et standpunktargument for S: \"I løpet av den industrielle revolusjon opplevde samfunnet en betydelig overgang fra håndverksbasert produksjon til mekanisert masseproduksjon.\"\n\nHvilket av alternativene nedenfor er et indirekte argument i denne argumentasjonen?",
             options: [
@@ -584,6 +694,226 @@ const allQuestions = {
    
     ],
     "Humaniora": [
+            {
+                question: "Hva er kjernen i Lévi-Strauss' strukturelle analyse av myter, slik som Ødipus-myten?",
+                options: [
+                    "Myter er kulturelle narrativer uten grunnlag i struktur",
+                    "Myter reflekterer logiske motsetninger i menneskelige erfaringer",
+                    "Myter utgjør en rekke individuelle hendelser uten sammenheng",
+                    "Myter representerer bare en enkel historiefortelling"
+                ],
+                answer: 1,
+                feedback: "Lévi-Strauss mente at myter reflekterer logiske motsetninger, som i Ødipus-myten med motsetningen mellom slektskapsbånd og jordfødthet."
+            },
+            {
+                question: "Hva kjennetegner diskursanalyse ifølge Foucault?",
+                options: [
+                    "En analyse av språklige strukturer uavhengig av kontekst",
+                    "En studie av hvordan utsagn får mening gjennom eksisterende ordenssystemer",
+                    "En oppsummering av verkets psykologiske perspektiver",
+                    "En analyse av språklige ytringer som følge av individuelle intensjoner"
+                ],
+                answer: 1,
+                feedback: "Foucaults diskursanalyse fokuserer på hvordan utsagn er underlagt en forutbestemt orden som gir dem mening."
+            },
+            {
+                question: "Hva mente Foucault om gjengs idéhistorisk forskning?",
+                options: [
+                    "Den gir en dynamisk tolkning av utsagn og verker",
+                    "Den tilbyr en alternativ forståelse av menneskelige erfaringer",
+                    "Den begrenser historien til kontinuitet og trygge fortolkninger",
+                    "Den gir en realistisk fremstilling av historiske begivenheter"
+                ],
+                answer: 2,
+                feedback: "Foucault kritiserte idéhistorisk forskning for å skape kontinuitet som gir 'bedøvet søvn' og begrenser forståelsen av det kontingente."
+            },
+            {
+                question: "Hva er 'forfatterfunksjonen' ifølge Foucault?",
+                options: [
+                    "En teoretisk rolle der forfatteren er irrelevant",
+                    "Et system for å kategorisere tekst som betydningsfullt eller ei",
+                    "Forfatterens personlige liv og intensjoner i et verk",
+                    "Et stabilt element som skaper mening i alle diskurser"
+                ],
+                answer: 1,
+                feedback: "Forfatterfunksjonen er en måte å kategorisere visse mengder tekst som et 'verk' basert på en antatt kilde til mening."
+            },
+            {
+                question: "Hva innebærer Gadamers begrep om virkningshistorie?",
+                options: [
+                    "Historien om verket basert på forfatterens intensjoner",
+                    "En serie språklige endringer over tid",
+                    "Et verks innflytelse og tradisjonelle fortolkninger over tid",
+                    "En linjær utvikling av et verks narrativ"
+                ],
+                answer: 2,
+                feedback: "Virkningshistorie refererer til hvordan et verk blir fortolket og re-fortolket over tid og danner tradisjoner."
+            },
+            {
+                question: "Hva betyr begrepet 'konstruktivistisk kjønnsperspektiv'?",
+                options: [
+                    "Kjønn er en biologisk realitet med faste egenskaper",
+                    "Kjønn er en identitet som skapes gjennom sosiale handlinger",
+                    "Kjønn eksisterer uavhengig av menneskelige erfaringer",
+                    "Kjønn kan kun forstås gjennom biologiske forskjeller"
+                ],
+                answer: 1,
+                feedback: "Det konstruktivistiske kjønnsperspektivet ser på kjønn som en identitet som formes gjennom sosiale og kulturelle handlinger."
+            },
+            {
+                question: "Hva mente Simone de Beauvoir med begrepet 'Den andre'?",
+                options: [
+                    "At kvinnen er likeverdig, men forskjellig fra mannen",
+                    "At kvinnen blir sett som en selvstendig individ",
+                    "At kvinnen defineres i forhold til mannen, som subjektet",
+                    "At kvinnelig identitet er helt uavhengig av mannens"
+                ],
+                answer: 2,
+                feedback: "Beauvoir mente at kvinnen ofte defineres som 'Den andre' i forhold til mannen, som ses som Subjektet."
+            },
+            {
+                question: "Hva var Judith Butlers syn på kjønn?",
+                options: [
+                    "Kjønn er en biologisk essens som ikke endres",
+                    "Kjønn er en stabil identitet skapt av kroppen",
+                    "Kjønn er en identitet skapt gjennom repetisjoner av sosiale handlinger",
+                    "Kjønn er en egenskap som utelukkende er genetisk"
+                ],
+                answer: 2,
+                feedback: "Butler hevder at kjønn konstitueres gjennom repetisjon av sosiale handlinger og ikke er en fast identitet."
+            },
+            {
+                question: "Hvordan ble kvinnens rolle i antikkens Athen språklig representert?",
+                options: [
+                    "Hun ble inkludert i begrepet 'Athenaios'",
+                    "Hun hadde samme status som menn i språket",
+                    "Hun var ekskludert fra borgerstatus og språklige titler",
+                    "Hun ble sett på som et autonomt medlem av samfunnet"
+                ],
+                answer: 2,
+                feedback: "Kvinnen hadde ingen borgerstatus og ble språklig ekskludert i antikkens Athen."
+            },
+            {
+                question: "Hvordan kritiserer Julia Serano Butlers teori om kjønn som 'performativt'?",
+                options: [
+                    "Serano mener kjønn er performativt i sin helhet",
+                    "Hun hevder at kjønn utelukkende er sosialt konstruert",
+                    "Hun påpeker at performativ teori overser dype personlige opplevelser av kjønn",
+                    "Serano mener kjønn bare er en kulturell identitet uten kroppslig realitet"
+                ],
+                answer: 2,
+                feedback: "Serano kritiserer performativ teori for å overse personlige og kroppslige opplevelser av kjønn."
+            },        
+            {
+                question: "Hva er målet med Schleiermachers hermeneutikk?",
+                options: [
+                    "Å forstå teksten uavhengig av forfatterens intensjoner",
+                    "Å forstå sjelslivet til forfatteren gjennom verket",
+                    "Å tolke teksten ut fra dens strukturelle elementer",
+                    "Å avdekke verket uten noen psykologisk tilnærming"
+                ],
+                answer: 1,
+                feedback: "Schleiermacher mente at målet var å forstå sjelslivet til forfatteren gjennom verket."
+            },
+            {
+                question: "Hva karakteriserer den grammatiske tilnærmingen i Schleiermachers hermeneutikk?",
+                options: [
+                    "Den fokuserer på forfatterens mentale tilstander",
+                    "Den analyserer allmenne språklige forutsetninger",
+                    "Den krever en dyp forståelse av samtidens psyke",
+                    "Den bygger på subjektiv opplevelse av teksten"
+                ],
+                answer: 1,
+                feedback: "Den grammatiske tilnærmingen analyserer de allmenne språklige forutsetningene for forfatterens verk."
+            },
+            {
+                question: "Hva er en for-dom ifølge Gadamers hermeneutikk?",
+                options: [
+                    "En antakelse fortolkeren har før møtet med verket",
+                    "En dom om verkets moralske verdi",
+                    "En analyse av tekstens språklige struktur",
+                    "En historisk analyse av forfatterens samtid"
+                ],
+                answer: 0,
+                feedback: "En for-dom er en bestemt oppfatning fortolkeren møter verket med, ifølge Gadamer."
+            },
+            {
+                question: "Hva innebærer forståelseshorisonten ifølge Gadamer?",
+                options: [
+                    "Summen av alle erfaringer en person har",
+                    "Summen av for-dommer en person bruker for å forstå",
+                    "Bare de bevisste antagelsene om et verk",
+                    "Et ferdig tolkningsrammeverk"
+                ],
+                answer: 1,
+                feedback: "Forståelseshorisonten er summen av for-dommer en person bruker til å forstå seg selv og verden."
+            },
+            {
+                question: "Hva betyr virkningshistorie i Gadamers hermeneutikk?",
+                options: [
+                    "Historien om et verks påvirkning gjennom tolkninger",
+                    "Forfatterens intensjon med verket",
+                    "Hvordan verket forstår sine egne lesere",
+                    "Den språklige strukturen til verket"
+                ],
+                answer: 0,
+                feedback: "Virkningshistorie handler om mengden av fortolkninger et verk har gjennomgått og tradisjonen som dannes rundt det."
+            },
+            {
+                question: "Hvordan definerer Saussure språktegnet?",
+                options: [
+                    "Som en refleksjon av språkbrukerens tanker",
+                    "Som et element med fastlagt mening",
+                    "Som en enhet av uttrykk og innhold",
+                    "Som et symbol på universell mening"
+                ],
+                answer: 2,
+                feedback: "Saussure definerer språktegnet som en enhet av uttrykk og innhold."
+            },
+            {
+                question: "Hva fokuserer strukturalismen på ifølge Saussures prinsipper?",
+                options: [
+                    "En diakron analyse av språket",
+                    "Språkets utvikling over tid",
+                    "Språksystemets struktur på et gitt tidspunkt",
+                    "En individuell språkbrukers perspektiv"
+                ],
+                answer: 2,
+                feedback: "Strukturalismen fokuserer på språksystemets struktur på et gitt tidspunkt, ikke på utvikling over tid."
+            },
+            {
+                question: "Hva innebærer den diakrone tilnærmingen til språk ifølge Saussure?",
+                options: [
+                    "Studiet av språk som et fast system",
+                    "Fokus på språkets utvikling over tid",
+                    "En ren grammatisk analyse",
+                    "En psykologisk tilnærming til språk"
+                ],
+                answer: 1,
+                feedback: "Diakron tilnærming fokuserer på språkets utvikling over tid, i motsetning til synkron tilnærming."
+            },
+            {
+                question: "Hvordan karakteriserer Gadamer sannhet i hermeneutisk sammenheng?",
+                options: [
+                    "Som en objektiv forståelse av et verk",
+                    "Som en erfaring av avdekkethet mellom fortolker og verk",
+                    "Som en psykologisk prosess knyttet til forfatterens intensjoner",
+                    "Som et fastlagt meningsinnhold i teksten"
+                ],
+                answer: 1,
+                feedback: "Gadamer ser sannhet som en erfaring av avdekkethet som oppstår mellom fortolker og verk."
+            },
+            {
+                question: "Hva er Schleiermachers syn på fullstendig tolkning?",
+                options: [
+                    "Den krever kun grammatisk analyse",
+                    "Den krever både grammatisk og psykologisk analyse",
+                    "Den bygger kun på psykologiske aspekter",
+                    "Den er begrenset til tekstens innhold"
+                ],
+                answer: 1,
+                feedback: "Schleiermacher mener en fullstendig tolkning må omfatte både grammatisk og psykologisk analyse."
+            },        
         {
             question: "Hvilken av de følgende påstandene er den mest treffende beskrivelsen av noe som kan sies å være en forskjell mellom Poppers og Kuhns tenkning om vitenskap?",
             options: [
@@ -834,6 +1164,226 @@ const allQuestions = {
         }
     ],
     "Natur-, menneske- og teknologisyn": [
+            {
+                question: "Hva innebærer substansdualisme i kropp/sinn-problemet?",
+                options: [
+                    "At mentale tilstander er resultatet av fysiske prosesser",
+                    "At sinn og kropp er to separate typer substans",
+                    "At sinnet er en fysisk prosess innenfor kroppens grenser",
+                    "At mentale og fysiske tilstander kan reduseres til ett fenomen"
+                ],
+                answer: 1,
+                feedback: "Substansdualisme hevder at sinnet og kroppen er to distinkte substanser som eksisterer uavhengig av hverandre."
+            },
+            {
+                question: "Hva er en hovedutfordring for substansdualisme?",
+                options: [
+                    "Å forklare hvordan immaterielle tilstander kan ha fysiske egenskaper",
+                    "Å forstå hvordan kropp og sinn kan ha identiske funksjoner",
+                    "Å bevise at mentale prosesser kun finnes i hjernen",
+                    "Å forklare hvordan sinn og kropp interagerer med hverandre"
+                ],
+                answer: 3,
+                feedback: "Problemet med substansdualisme er å forklare hvordan en immateriell sjel kan samhandle med en materiell kropp."
+            },
+            {
+                question: "Hva innebærer fysikalismen i synet på mentale tilstander?",
+                options: [
+                    "At mentale tilstander har en fysisk årsak, men er immaterielle",
+                    "At mentale tilstander er uavhengige av hjernens tilstander",
+                    "At mentale tilstander er identiske med spesifikke nevrale tilstander",
+                    "At mentale prosesser eksisterer på flere nivåer samtidig"
+                ],
+                answer: 2,
+                feedback: "Fysikalismen hevder at mentale tilstander er identiske med nevrale tilstander, som forholdet mellom vann og H2O."
+            },
+            {
+                question: "Hva er funksjonalismens syn på mentale tilstander?",
+                options: [
+                    "De er definert ut fra strukturelle egenskaper",
+                    "De karakteriseres ved hva de gjør, uavhengig av fysisk form",
+                    "De er unike for biologiske organismer",
+                    "De eksisterer kun i organismer med komplekse nevronale nettverk"
+                ],
+                answer: 1,
+                feedback: "Funksjonalismen mener mentale tilstander karakteriseres av funksjon, ikke av den fysiske strukturen som realiserer dem."
+            },
+            {
+                question: "Hva er Searles hovedkritikk av Turingtesten?",
+                options: [
+                    "At testen er basert på en foreldet forståelse av menneskelig intelligens",
+                    "At den feiler i å skille mellom syntaks og semantikk",
+                    "At den forutsetter en umulig sammenligning mellom menneske og maskin",
+                    "At maskiner mangler fysisk kapasitet til å bestå testen"
+                ],
+                answer: 1,
+                feedback: "Searle kritiserer Turingtesten for kun å vurdere syntaks (regler for tegnsekvenser), ikke semantikk (mening)."
+            },
+            {
+                question: "Hva er kjernen i Jacksons kunnskapsargument?",
+                options: [
+                    "At fysiske fakta er nødvendige og tilstrekkelige for full forståelse",
+                    "At noen mentale fakta er ikke-reduserbare til fysiske fakta",
+                    "At all kunnskap om verden til syvende og sist er objektiv",
+                    "At mentale tilstander kun kan forklares gjennom erfaring"
+                ],
+                answer: 1,
+                feedback: "Jacksons kunnskapsargument hevder at selv full fysisk kunnskap ikke nødvendigvis gir innsikt i alle mentale fakta."
+            },
+            {
+                question: "Hvordan karakteriseres enaktivisme?",
+                options: [
+                    "Bevissthet er en intern prosess som kontrolleres av hjernen",
+                    "Bevissthet kan forstås som en fysisk reaksjon på ytre stimuli",
+                    "Bevissthet er noe vi skaper gjennom våre interaksjoner med omverdenen",
+                    "Bevissthet er et resultat av geners og miljøets påvirkning"
+                ],
+                answer: 2,
+                feedback: "Enaktivisme ser bevissthet som noe som oppstår gjennom aktiv samhandling med omgivelsene, ikke som en isolert, intern prosess."
+            },
+            {
+                question: "Hva innebærer det relasjonelle teknologisynet?",
+                options: [
+                    "At teknologi er fullstendig nøytral og kun avhengig av menneskelig bruk",
+                    "At teknologi former, og formes av, samfunnets politiske, økonomiske og etiske valg",
+                    "At teknologisk utvikling er uavhengig av menneskelige interesser",
+                    "At teknologi bestemmer alle våre kollektive mål og verdier"
+                ],
+                answer: 1,
+                feedback: "Det relasjonelle teknologisynet hevder at teknologi og samfunn samspiller, og at teknologi både former og formes av menneskelige valg."
+            },
+            {
+                question: "Hvordan ser teknologisk instrumentalisme på teknologi?",
+                options: [
+                    "Som en uavhengig faktor som påvirker samfunnets utvikling",
+                    "Som et verktøy som har egenverdi og moral",
+                    "Som rene hjelpemidler uten egenverdi, verken god eller dårlig",
+                    "Som en integrert del av samfunnets moralske struktur"
+                ],
+                answer: 2,
+                feedback: "Teknologisk instrumentalisme ser teknologi som rene hjelpemidler, hvor verdien bestemmes av bruken, ikke av teknologien selv."
+            },
+            {
+                question: "Hva mente Heidegger med at teknologi kan sees som en 'pharmakon'?",
+                options: [
+                    "At teknologi har utviklet seg gjennom menneskers behov",
+                    "At teknologi kan være både et middel og en risiko for samfunnet",
+                    "At teknologi kun fungerer som et verktøy for menneskelig vekst",
+                    "At teknologi skaper et moralsk skille mellom ulike samfunn"
+                ],
+                answer: 1,
+                feedback: "Heidegger ser teknologi som en 'pharmakon' – både et potensielt gode og en risiko, lik en medisin med bivirkninger."
+            },        
+            {
+                question: "Hva kjennetegner det teleologiske natursynet?",
+                options: [
+                    "Alle prosesser er styrt av mekaniske årsaker",
+                    "Alle prosesser har et formål eller en hensikt",
+                    "Naturlige prosesser skjer kun som resultat av menneskelig intervensjon",
+                    "Forandringer i naturen skjer tilfeldig uten underliggende årsak"
+                ],
+                answer: 1,
+                feedback: "Det teleologiske natursynet innebærer at alle prosesser har et formål eller hensikt, slik Aristoteles beskrev."
+            },
+            {
+                question: "Hva er den formale årsaken ifølge Aristoteles' årsaksmodell?",
+                options: [
+                    "Det fysiske materialet som utgjør en ting",
+                    "Det ytre som igangsetter en prosess",
+                    "Den interne strukturen eller formen til noe",
+                    "Det endelige målet eller hensikten bak en handling"
+                ],
+                answer: 2,
+                feedback: "Den formale årsaken refererer til en tings iboende form eller struktur."
+            },
+            {
+                question: "Hvordan forklarer det mekanistiske natursynet forandring i naturen?",
+                options: [
+                    "Gjennom en kontinuerlig tilpasning til formål",
+                    "Som resultat av materiens bevegelse i rommet",
+                    "Ved naturlige tings søken etter sitt hvilested",
+                    "Gjennom en vekselvirkning mellom stoff og form"
+                ],
+                answer: 1,
+                feedback: "Det mekanistiske natursynet forklarer forandring som resultat av materiens bevegelse i rommet, uten formål."
+            },
+            {
+                question: "Hva kjennetegner himmellegemenes bevegelse i det teleologiske natursynet?",
+                options: [
+                    "De følger uregelmessige, elliptiske baner",
+                    "De er drevet av tilfeldige bevegelser",
+                    "De beveger seg i perfekte sirkelbaner som reflekterer deres guddommelige natur",
+                    "De er i konstant bevegelse uten noen bestemte baner"
+                ],
+                answer: 2,
+                feedback: "I det teleologiske natursynet antas himmellegemene å bevege seg i perfekte sirkler, styrt av en guddommelig natur."
+            },
+            {
+                question: "Hva innebærer hard determinisme innen fri vilje-debatten?",
+                options: [
+                    "At mennesker noen ganger har fri vilje til å velge ulike handlinger",
+                    "At moralsk ansvar er mulig selv i et deterministisk univers",
+                    "At mennesker aldri har mulighet til å handle annerledes enn de faktisk gjør",
+                    "At fri vilje eksisterer kun under visse betingelser"
+                ],
+                answer: 2,
+                feedback: "Hard determinisme hevder at vi aldri har mulighet til å handle annerledes, og derfor ikke har moralsk ansvar."
+            },
+            {
+                question: "Hva skiller inkompatibilisme fra kompatibilisme i synet på moralsk ansvar?",
+                options: [
+                    "Inkompatibilisme hevder at moralsk ansvar kun er relevant i religiøs kontekst",
+                    "Inkompatibilisme avviser at moralsk ansvar er mulig under determinisme",
+                    "Kompatibilisme mener fri vilje er uforenlig med et deterministisk univers",
+                    "Inkompatibilisme påstår at menneskelig adferd er fullstendig tilfeldig"
+                ],
+                answer: 1,
+                feedback: "Inkompatibilisme hevder at moralsk ansvar forutsetter fri vilje og derfor er uforenlig med determinisme."
+            },
+            {
+                question: "Hvordan defineres kropp/sinn-problemet i filosofien?",
+                options: [
+                    "Hvordan biologiske prosesser kan styres av mekaniske årsaker",
+                    "Forholdet mellom kognitive prosesser og menneskets biologiske evolusjon",
+                    "Hvordan bevisste opplevelser relaterer til fysiske prosesser i hjernen",
+                    "Kilden til menneskets moralske plikter overfor andre"
+                ],
+                answer: 2,
+                feedback: "Kropp/sinn-problemet handler om hvordan bevisste opplevelser henger sammen med fysiske prosesser i hjernen."
+            },
+            {
+                question: "Hva innebærer det heliosentriske verdensbildet?",
+                options: [
+                    "At solen og alle andre himmellegemer kretser rundt jorden",
+                    "At solen er sentrum for planetenes bevegelser, mens jorden står stille",
+                    "At solen er sentrum for planetsystemet, og jorden beveger seg rundt solen",
+                    "At jorden og solen beveger seg rundt et felles midtpunkt i universet"
+                ],
+                answer: 2,
+                feedback: "Det heliosentriske verdensbildet innebærer at solen er sentrum og planetene, inkludert jorden, beveger seg rundt den."
+            },
+            {
+                question: "Hva karakteriserer inkompatibilistisk libertarianisme?",
+                options: [
+                    "Moralsk ansvar er umulig i et univers med determinisme",
+                    "Fri vilje eksisterer noen ganger uavhengig av determinisme",
+                    "Determinisme begrenser ikke menneskets mulighet til moralsk ansvar",
+                    "Ingen handlinger kan forklares uten å ta hensyn til ytre påvirkninger"
+                ],
+                answer: 1,
+                feedback: "Libertarianisme hevder at fri vilje noen ganger eksisterer og dermed gir grunnlag for moralsk ansvar, selv om determinisme ikke gjelder i alle tilfeller."
+            },
+            {
+                question: "Hva er det mekanistiske natursynets syn på levende organismer?",
+                options: [
+                    "De følger sine naturlige formål gjennom ulike utviklingsfaser",
+                    "De styres av en iboende formålsårsaksmodell",
+                    "De er sammensetninger av materie uten iboende formål",
+                    "De har en kombinasjon av mekanistiske og teleologiske egenskaper"
+                ],
+                answer: 2,
+                feedback: "Det mekanistiske natursynet ser levende organismer som sammensetninger av materie uten iboende formål."
+            },        
         {
             question: "Se for deg at Inga resonnerer på følgende måte: «Alle hendelser er fullt ut årsaksbestemte. Det betyr for eksempel at Utøya-terroristen ikke kunne ha valgt å handle annerledes enn han gjorde, gitt sine gener, oppvekst og andre faktorer som lå utenfor terroristens kontroll. Men terroristen må likevel sies å ha handlet av fri vilje. I alle fall fram til han ble stoppet av politiet handlet han uhindret helt i tråd i med sine ønsker og sin oppfatning av situasjonen».\n\nHvordan er det mest nærliggende å beskrive synet til Inga?",
             options: [
@@ -1342,6 +1892,116 @@ const allQuestions = {
         },
     ],
     "Etikk og politisk filosofi": [
+            {
+                question: "Hva kjennetegner kulturrelativisme innen metaetikk?",
+                options: [
+                    "At moralske normer er universelt gyldige på tvers av kulturer",
+                    "At moral er subjektivt og varierer mellom individer",
+                    "At det finnes moralske sannheter, men de er kulturelt betinget",
+                    "At moral er basert på vitenskapelige fakta"
+                ],
+                answer: 2,
+                feedback: "Kulturrelativismen hevder at moralske normer er riktige eller gale kun relativt til en gitt kultur."
+            },
+            {
+                question: "Hva er hovedpoenget i Benthams nyttekalkyle innen utilitarismen?",
+                options: [
+                    "Å prioritere intensitet fremfor varighet",
+                    "Å vektlegge både intensitet og omfang av nytelsen",
+                    "Å ignorere sannsynlighet i nytelsens verdi",
+                    "Å fokusere kun på den moralske aktørens nytte"
+                ],
+                answer: 1,
+                feedback: "Benthams nyttekalkyle inkluderer både intensitet og omfang, i tillegg til varighet og sannsynlighet."
+            },
+            {
+                question: "Hva er Kants syn på hypotetiske imperativer?",
+                options: [
+                    "De gjelder uavhengig av personlige mål",
+                    "De er bindende uansett situasjon",
+                    "De foreskriver handlinger for å oppnå bestemte mål",
+                    "De innebærer alltid moralske plikter"
+                ],
+                answer: 2,
+                feedback: "Hypotetiske imperativer foreskriver handlinger for å oppnå et spesifikt mål og gjelder kun dersom dette målet er satt."
+            },
+            {
+                question: "Hva er formålet med dydsetikken ifølge Aristoteles?",
+                options: [
+                    "Å handle for å oppnå nytelse og unngå smerte",
+                    "Å identifisere plikter for moralsk riktig handling",
+                    "Å utvikle karaktertrekk som fremmer et godt liv",
+                    "Å maksimere velferd i alle situasjoner"
+                ],
+                answer: 2,
+                feedback: "Dydsetikken fokuserer på å utvikle gode karaktertrekk som fører til et vellykket og meningsfylt liv."
+            },
+            {
+                question: "Hva betyr Kants humanitetsprinsipp?",
+                options: [
+                    "Å behandle alle handlinger som potensielle universelle lover",
+                    "Å aldri bruke andre som et middel, men som et formål i seg selv",
+                    "Å alltid handle i tråd med allmennviljen",
+                    "Å vurdere handlinger etter deres konsekvenser for flest mulig"
+                ],
+                answer: 1,
+                feedback: "Humanitetsprinsippet innebærer å behandle mennesker som formål i seg selv, aldri bare som midler."
+            },
+            {
+                question: "Hva innebærer Singers syn på dyrs moralske status innen utilitarismen?",
+                options: [
+                    "Dyr har ikke moralsk status",
+                    "Dyr kan kun betraktes som ressurser for menneskers glede",
+                    "Dyr som føler smerte skal regnes som moralsk relevante",
+                    "Dyrs interesser skal vektlegges mindre enn menneskers"
+                ],
+                answer: 2,
+                feedback: "Singer mener at alle vesener som kan føle smerte, inkludert dyr, har moralsk relevans og må tas hensyn til."
+            },
+            {
+                question: "Hva innebærer kulturrelativismens syn på moralsk fremgang?",
+                options: [
+                    "At moral kan forbedres universelt over tid",
+                    "At alle kulturer kan utvikle seg i samme moralske retning",
+                    "At moralsk fremgang ikke eksisterer som et objektivt konsept",
+                    "At alle samfunn til slutt vil utvikle like moralske normer"
+                ],
+                answer: 2,
+                feedback: "Kulturrelativismen avviser ideen om objektiv moralsk fremgang, siden moralske normer varierer mellom kulturer."
+            },
+            {
+                question: "Hva mener Mill med forskjellen på 'høyere' og 'lavere' nytelse?",
+                options: [
+                    "At all nytelse har lik verdi",
+                    "At intellektuell nytelse er mer verdifull enn fysisk nytelse",
+                    "At fysisk nytelse overgår intellektuell nytelse",
+                    "At nytelse er irrelevant i moralske vurderinger"
+                ],
+                answer: 1,
+                feedback: "Mill hevder at intellektuell nytelse er mer verdifull enn fysisk nytelse, og at kvaliteten av nytelse er viktig."
+            },
+            {
+                question: "Hvilken av følgende er en innvending mot Kants pliktetikk?",
+                options: [
+                    "Den mangler fokus på konsekvenser",
+                    "Den verdsetter følelsers rolle i moral",
+                    "Den er kun gyldig i spesifikke kulturer",
+                    "Den er basert på subjektive normer"
+                ],
+                answer: 0,
+                feedback: "En kritikk av Kants pliktetikk er at den ignorerer konsekvenser og fokuserer utelukkende på plikten i handlingen."
+            },
+            {
+                question: "Hva er en moralsk dyd ifølge dydsetikken?",
+                options: [
+                    "En plikt til å maksimere lykke",
+                    "Et karaktertrekk som gjør oss bedre rustet til å leve et godt liv",
+                    "Et personlig ønske om å handle riktig",
+                    "En universell lov for å oppnå velvære"
+                ],
+                answer: 1,
+                feedback: "En moralsk dyd er et karaktertrekk som gjør oss i stand til å fungere godt i samfunnet og leve et godt liv."
+            },        
         {
             question: "Hva er kjernen i kompatibilisme i forhold til fri vilje?",
             options: [
@@ -1984,6 +2644,5 @@ const allQuestions = {
         },
     ],
     "Estetikk": [
-
     ],
 };
