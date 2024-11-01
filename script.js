@@ -54,6 +54,14 @@ function getSelectedChapters() {
                 .map(button => button.getAttribute("data-chapter"));
 }
 
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 // Start quiz based on selected chapters and question count
 function startQuiz() {
     const selectedChapters = getSelectedChapters();
@@ -127,7 +135,6 @@ function getRandomQuestionsByCategory(questions, number, categories) {
     return selectedQuestions.slice(0, number);
 }
 
-// Show the current question and options, with chapter title
 function showQuestion() {
     if (currentQuestionIndex >= selectedQuestions.length) {
         showResults();
@@ -140,7 +147,7 @@ function showQuestion() {
     if (currentQuestion && currentQuestion.chapter) {
         document.getElementById("current-category").textContent = `Kapittel: ${currentQuestion.chapter}`;
     } else {
-        document.getElementById("current-category").textContent = `Ka: Ikke spesifisert`;
+        document.getElementById("current-category").textContent = `Kapittel: Ikke spesifisert`;
     }
 
     questionElement.textContent = currentQuestion.question;
@@ -148,13 +155,17 @@ function showQuestion() {
     nextButton.style.display = "none";
     questionCounterElement.textContent = `Spørsmål ${currentQuestionIndex + 1} av ${selectedQuestions.length}`;
 
-    currentQuestion.options.forEach((option, index) => {
+    // Kopier alternativene og shuffle dem
+    const shuffledOptions = shuffle([...currentQuestion.options]);
+
+    shuffledOptions.forEach((option, index) => {
         const button = document.createElement("button");
         button.textContent = option;
-        button.onclick = () => selectAnswer(index, button);
+        button.onclick = () => selectAnswer(currentQuestion.options.indexOf(option), button); // Finn originalindeks
         optionsElement.appendChild(button);
     });
 }
+
 
 // Handle answer selection
 function selectAnswer(selectedIndex, button) {

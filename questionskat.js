@@ -1893,6 +1893,171 @@ const allQuestions = {
     ],
     "Etikk og politisk filosofi": [
             {
+                question: "Hvordan forstår John Stuart Mill negativ frihet?",
+                options: [
+                    "Som individets frihet til selvrealisering, begrenset av hensyn til samfunnets moralnormer",
+                    "Som frihet fra innblanding fra andre, med unntak av når denne friheten kan føre til skade på andre",
+                    "Som frihet til å delta i det demokratiske fellesskap uten tvang",
+                    "Som rett til å utøve egne interesser, så lenge de bidrar til kollektiv nytte"
+                ],
+                answer: 1,
+                feedback: "Mill ser negativ frihet som fravær av innblanding, med begrensning dersom handlingen skader andre."
+            },
+            {
+                question: "Hva innebærer skadeprinsippet i Mills politiske filosofi?",
+                options: [
+                    "At man kan gripe inn overfor en persons handlinger hvis de utgjør en fysisk risiko for andre",
+                    "At man kan begrense noens frihet kun hvis det er nødvendig for å hindre skade på andre, uavhengig av moralsk dom",
+                    "At individets handlinger bør kontrolleres av staten for å forhindre både fysisk og moralsk skade",
+                    "At man kan anvende makt for å forhindre handlinger som truer samfunnets felles normer"
+                ],
+                answer: 1,
+                feedback: "Mill hevder at friheten til individet kan begrenses kun for å hindre skade på andre."
+            },
+            {
+                question: "Hvordan begrunner Mill frihet til livsstilsvalg?",
+                options: [
+                    "Gjennom en rettighetsbasert tilnærming der individets autonomi er ukrenkelig",
+                    "Gjennom nytteverdi, hvor friheten bidrar til samfunnet ved å øke den totale lykken",
+                    "Gjennom å påpeke at frihet til livsstil uansett ikke påvirker andre",
+                    "Gjennom å forankre den i religiøse normer og tradisjoner"
+                ],
+                answer: 1,
+                feedback: "Mill bruker nytteprinsippet og hevder at frihet til egne livsvalg øker den samlede lykken i samfunnet."
+            },
+            {
+                question: "Hva er et kjennetegn ved paternalisme ifølge Mill?",
+                options: [
+                    "Å forby handlinger som truer statens stabilitet",
+                    "Å bruke makt for å beskytte individet mot sine egne valg",
+                    "Å pålegge folk å handle til samfunnets beste",
+                    "Å tillate all form for innblanding dersom det støtter en felles moral"
+                ],
+                answer: 1,
+                feedback: "Paternalisme innebærer bruk av makt for å beskytte individer mot egne valg, selv om de ikke skader andre."
+            },
+            {
+                question: "Hvordan kan frihet som ikke-dominans forstås?",
+                options: [
+                    "Som frihet fra enhver sosial innflytelse",
+                    "Som frihet fra vilkårlig maktutøvelse fra andre",
+                    "Som frihet til å oppnå egne mål uavhengig av andre",
+                    "Som frihet til å dominere egne interesser uten ytre kontroll"
+                ],
+                answer: 1,
+                feedback: "Frihet som ikke-dominans innebærer fravær av vilkårlig maktutøvelse fra andre over individet."
+            },
+            {
+                question: "Hva mente Wollstonecraft med reell likestilling?",
+                options: [
+                    "Formell likhet i politiske og juridiske rettigheter",
+                    "Økonomisk og intellektuell uavhengighet for kvinner",
+                    "Lik behandling av kvinner og menn i alle sammenhenger",
+                    "Lik rett til å inneha offentlige embeter"
+                ],
+                answer: 1,
+                feedback: "Wollstonecraft argumenterte for kvinners reelle uavhengighet, både økonomisk og intellektuelt."
+            },
+            {
+                question: "Hva innebærer kapabilitetstilnærmingen til Martha Nussbaum?",
+                options: [
+                    "At staten skal sørge for lik lønn for alle yrker",
+                    "At individers faktiske muligheter til selvrealisering må beskyttes",
+                    "At alle borgere bør ha samme moralske verdier",
+                    "At samfunnet må sikre økonomisk likhet for alle"
+                ],
+                answer: 1,
+                feedback: "Nussbaum mener at staten må sikre individers faktiske muligheter til å utøve sine evner."
+            },
+            {
+                question: "Hva skiller statusbaserte rettigheter fra interessebaserte rettigheter?",
+                options: [
+                    "Statusbaserte rettigheter tilkommer individer basert på moralsk fortjeneste",
+                    "Statusbaserte rettigheter tilkommer individer i kraft av deres egenskaper, ikke samfunnsnytte",
+                    "Interessebaserte rettigheter er de samme som grunnleggende menneskerettigheter",
+                    "Interessebaserte rettigheter er uavhengige av individuelle evner"
+                ],
+                answer: 1,
+                feedback: "Statusbaserte rettigheter er basert på individets iboende egenskaper, ikke på deres samfunnsnytte."
+            },
+            {
+                question: "Hva er en utfordring med å anvende skadeprinsippet?",
+                options: [
+                    "Å fastslå når skade på moralske interesser også kan begrense frihet",
+                    "Å definere klart hvilke handlinger som forårsaker fysisk skade",
+                    "Å sikre at det er moralsk akseptabelt for staten å regulere skadelig adferd",
+                    "Å vurdere når skade på individet selv gir grunnlag for innblanding"
+                ],
+                answer: 1,
+                feedback: "Det er utfordrende å avgrense skadeprinsippet til skade på andre og bestemme hvilke interesser som bør beskyttes."
+            },
+            {
+                question: "Hva er formålet med ytringsfrihet ifølge Mill?",
+                options: [
+                    "Å tillate enhver mening for å unngå sosial konflikt",
+                    "Å fremme individuelle rettigheter og beskyttelse mot innblanding",
+                    "Å styrke samfunnet gjennom åpne debatter og læring",
+                    "Å begrense sensur basert på flertallets verdier"
+                ],
+                answer: 2,
+                feedback: "Mill mener ytringsfrihet gir grunnlag for læring og korreksjon gjennom åpne diskusjoner."
+            },
+            {
+                question: "Hva mener Charles Taylor med frihet som selvrealisering?",
+                options: [
+                    "At frihet er en naturlig tilstand uten behov for politisk organisering",
+                    "At individet kan utvikle sine evner best uten ytre innblanding",
+                    "At frihet innebærer å kunne utvikle sine iboende evner innenfor et fellesskap",
+                    "At frihet kun er verdifull når den bidrar til økonomisk vekst"
+                ],
+                answer: 2,
+                feedback: "Taylor mener frihet som selvrealisering er knyttet til utvikling av evner innenfor et velorganisert fellesskap."
+            },
+            {
+                question: "Hva innebærer en 'prinsipiell begrunnelse' for demokrati?",
+                options: [
+                    "At demokrati er den mest stabile styringsformen",
+                    "At demokrati sikrer politisk likhet og selvstyre",
+                    "At demokrati tillater størst mulig politisk effektivitet",
+                    "At demokrati er nødvendig for økonomisk vekst"
+                ],
+                answer: 1,
+                feedback: "En prinsipiell begrunnelse for demokrati er at det sikrer politisk likhet og retten til selvstyre."
+            },
+            {
+                question: "Hva er Jason Brennans innvending mot demokratiet?",
+                options: [
+                    "At demokrati favoriserer økonomisk urettferdighet",
+                    "At inkompetente velgere kan ha urettmessig makt over andre",
+                    "At demokratier mangler tilstrekkelig økonomisk stabilitet",
+                    "At demokratiske valg ikke er tilpasset dagens teknologiske utvikling"
+                ],
+                answer: 1,
+                feedback: "Brennan argumenterer for at demokratiet gir politisk makt til velgere som kan være uinformerte eller irrasjonelle."
+            },
+            {
+                question: "Hvordan ser Mill på kvinnefrigjøring i et utilitaristisk perspektiv?",
+                options: [
+                    "Som en moralsk plikt uten praktisk betydning for samfunnet",
+                    "Som en fordel for både kvinner og samfunnet, ved å øke total nytte",
+                    "Som en trussel mot tradisjonelle verdier og stabilitet",
+                    "Som en nødvendighet for å opprettholde sosiale normer"
+                ],
+                answer: 1,
+                feedback: "Mill argumenterer for at frigjøring av kvinner øker total lykke og gir fordeler både for kvinner og samfunnet."
+            },
+            {
+                question: "Hvordan kan ytringsfrihet begrenses ifølge skadeprinsippet?",
+                options: [
+                    "Ytringer som utfordrer flertallets moral kan begrenses",
+                    "Ytringer som truer andres sikkerhet og velferd kan begrenses",
+                    "Alle kontroversielle ytringer bør være lovlige",
+                    "Kun ytringer mot statlige institusjoner kan begrenses"
+                ],
+                answer: 1,
+                feedback: "Ifølge skadeprinsippet kan ytringsfriheten begrenses dersom den utgjør en reell trussel mot andres sikkerhet eller velferd."
+            },        
+            {
                 question: "Hva kjennetegner kulturrelativisme innen metaetikk?",
                 options: [
                     "At moralske normer er universelt gyldige på tvers av kulturer",
