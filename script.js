@@ -121,6 +121,8 @@ function toggleChapterSelection(button) {
     }
 }
 
+
+
 // Get selected chapters
 function getSelectedChapters() {
     return Array.from(document.querySelectorAll('#chapter-selection .selected'))
