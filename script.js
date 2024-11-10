@@ -23,7 +23,7 @@ const startButton = document.getElementById("start-button");
 // Enable start button by default
 startButton.disabled = false;
 
-let snowAmount = 50; // Startverdi for antall snøfnugg
+let snowAmount = 5; // Start med minimum snømengde og sakte hastighet
 const snowSlider = document.getElementById('snowSlider');
 const snowContainer = document.getElementById('snowContainer');
 
@@ -63,7 +63,7 @@ function createSnowflake() {
     snowflake.style.animationDuration = duration;
 
     // Fjern eller minimer forsinkelsen så snøfnuggene starter umiddelbart
-    const delay = Math.random() * 0.1 + 's'; // Kort forsinkelse, maks 0.5 sekunder
+    const delay = Math.random() * 0.5 + 's'; // Kort forsinkelse, maks 0.5 sekunder
     snowflake.style.animationDelay = delay;
 
     // Legg til snøfnugget i containeren
@@ -74,8 +74,6 @@ function createSnowflake() {
         snowflake.remove();
     });
 }
-
-
 
 // Kontinuerlig snøfall, med justeringer basert på snowAmount
 function snowFallLoop() {
@@ -90,9 +88,6 @@ function snowFallLoop() {
 
 // Start snøfall
 snowFallLoop();
-
-
-
 
 
 
