@@ -23,6 +23,79 @@ const startButton = document.getElementById("start-button");
 // Enable start button by default
 startButton.disabled = false;
 
+let snowAmount = 50; // Startverdi for antall snøfnugg
+const snowSlider = document.getElementById('snowSlider');
+const snowContainer = document.getElementById('snowContainer');
+
+// Oppdater snømengde og hastighet basert på sliderens verdi
+snowSlider.addEventListener('input', (e) => {
+    snowAmount = parseInt(e.target.value);
+    updateSnowflakeSpeed();
+});
+
+// Funksjon for å oppdatere hastigheten til alle eksisterende snøfnugg
+function updateSnowflakeSpeed() {
+    const snowflakes = document.querySelectorAll('.snowflake');
+    
+    // Beregn hastighet basert på slideren - sakte på lavt nivå, raskt på høyt nivå
+    const duration = snowAmount === 1 ? '100s' : (100 / snowAmount) + 's'; // Nesten stillestående ved lav verdi
+
+    snowflakes.forEach((snowflake) => {
+        snowflake.style.animationDuration = duration;
+    });
+}
+
+function createSnowflake() {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.textContent = '❄';
+
+    // Sett en tilfeldig størrelse og posisjon
+    const size = Math.random() * 1.5 + 0.5 + 'em';
+    snowflake.style.fontSize = size;
+    snowflake.style.left = Math.random() * 100 + 'vw';
+
+    // Gi hvert snøfnugg en tilfeldig startposisjon langs y-aksen
+    snowflake.style.top = Math.random() * 100 + 'vh';
+
+    // Sett startfart for snøfnuggene
+    const duration = snowAmount === 1 ? '100s' : (100 / snowAmount) + 's'; // Raskere når snowAmount er høy
+    snowflake.style.animationDuration = duration;
+
+    // Fjern eller minimer forsinkelsen så snøfnuggene starter umiddelbart
+    const delay = Math.random() * 0.1 + 's'; // Kort forsinkelse, maks 0.5 sekunder
+    snowflake.style.animationDelay = delay;
+
+    // Legg til snøfnugget i containeren
+    snowContainer.appendChild(snowflake);
+
+    // Fjern snøfnugget når animasjonen er ferdig
+    snowflake.addEventListener('animationend', () => {
+        snowflake.remove();
+    });
+}
+
+
+
+// Kontinuerlig snøfall, med justeringer basert på snowAmount
+function snowFallLoop() {
+    const currentFlakes = document.querySelectorAll('.snowflake').length;
+    if (currentFlakes < snowAmount * 5) { // Øk antall snøfnugg ved høye verdier
+        createSnowflake();
+    }
+
+    // Be om ny animasjonsramme
+    requestAnimationFrame(snowFallLoop);
+}
+
+// Start snøfall
+snowFallLoop();
+
+
+
+
+
+
 // Handle selection of question count on the start screen without resetting selected categories
 function setQuestionCount(count, button) {
     questionCount = count;
@@ -140,7 +213,7 @@ function showQuestion() {
         showResults();
         return;
     }
-
+    
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
     // Sjekk om currentQuestion har en 'chapter'-egenskap
@@ -158,30 +231,32 @@ function showQuestion() {
     // Kopier alternativene og shuffle dem
     const shuffledOptions = shuffle([...currentQuestion.options]);
 
+    // Finn den riktige svarindeksen etter shuffling
+    const correctAnswerIndex = shuffledOptions.indexOf(currentQuestion.options[currentQuestion.answer]);
+
     shuffledOptions.forEach((option, index) => {
         const button = document.createElement("button");
         button.textContent = option;
-        button.onclick = () => selectAnswer(currentQuestion.options.indexOf(option), button); // Finn originalindeks
+        button.onclick = () => selectAnswer(index, correctAnswerIndex, button); // Send shufflet indeks og korrekt indeks
         optionsElement.appendChild(button);
     });
 }
 
 
-// Handle answer selection
-function selectAnswer(selectedIndex, button) {
-    const currentQuestion = selectedQuestions[currentQuestionIndex];
+
+function selectAnswer(selectedIndex, correctAnswerIndex, button) {
     const allButtons = optionsElement.querySelectorAll("button");
     button.classList.add("highlight");
 
-    if (selectedIndex === currentQuestion.answer) {
-        feedbackElement.textContent = "Riktig! " + currentQuestion.feedback;
+    if (selectedIndex === correctAnswerIndex) {
+        feedbackElement.textContent = "Riktig! " + selectedQuestions[currentQuestionIndex].feedback;
         button.classList.add("correct");
         score++;
         updateProgressBar(true); // Update progress bar as correct
     } else {
-        feedbackElement.textContent = "Feil. " + currentQuestion.feedback;
+        feedbackElement.textContent = "Feil. " + selectedQuestions[currentQuestionIndex].feedback;
         button.classList.add("incorrect");
-        allButtons[currentQuestion.answer].classList.add("correct");
+        allButtons[correctAnswerIndex].classList.add("correct"); // Mark correct answer
         updateProgressBar(false); // Update progress bar as incorrect
     }
 
@@ -192,6 +267,7 @@ function selectAnswer(selectedIndex, button) {
 
     nextButton.style.display = "block";
 }
+
 
 // Handle next question or restart quiz
 nextButton.onclick = () => {

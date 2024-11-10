@@ -1893,6 +1893,94 @@ const allQuestions = {
     ],
     "Etikk og politisk filosofi": [
             {
+                question: "«Veganisme er meningsløst ettersom mennesker har spist kjøtt i tusenvis av år». Hvorfor er dette argumentet problematisk?",
+                options: [
+                    "Det innebærer at det også må være moralsk tillat å spise menneskekjøtt.",
+                    "Det er et brudd på skadeprinsippet fordi det uttrykker paternalisme.",
+                    "Det er åpenbart at dyr har akkurat de samme rettigheter som mennesker.",
+                    "Det er en appell til det naturlige, en form for slutning fra er til bør."
+                ],
+                answer: 3,
+                feedback: "Argumentet appellerer til det naturlige og antar at noe 'er' derfor det 'bør' være."
+            },
+            {
+                question: "Anna mener at vi bør gi mer penger til bistand. Hvilket alternativ uttrykker best en utilitaristisk begrunnelse for Annas synspunkt?",
+                options: [
+                    "Nødstilte mennesker vil ha mer utbytte av å motta noe av vår velstandsoverflod gjennom bistand enn vi vil ha av å beholde hele denne overfloden for oss selv.",
+                    "Det er moralsk påkrevd at vi hjelper andre, men vi står selv fritt til å velge hvordan vi vil hjelpe. Det å gi penger til bistand er et av alternativene.",
+                    "Sjenerøsitet er en betingelse for å være moralsk god. For å kunne regnes som sjenerøs må man handle på en sjenerøs måte, slik som ved å gi penger til bistand.",
+                    "Fattigdom bryter med vår naturlige rett til frihet, fordi det setter mennesker i et avhengighetsforhold til rike. Derfor bør vi bidra til å utrydde fattigdom."
+                ],
+                answer: 0,
+                feedback: "Utilitarisme vurderer handlinger basert på deres nytte, her å maksimere lykken ved å hjelpe nødstilte."
+            },
+            {
+                question: "Hvilken av de følgende formuleringene er mest i samsvar med Kants universalitetsprinsipp?",
+                options: [
+                    "Du bør ikke lyve, for du kan ikke konsistent ha til hensikt å lyve for å oppnå en fordel samtidig som du tillater at alle andre kan handle på samme måte.",
+                    "Du bør ikke lyve såfremt det ikke er nødvendig for å redde deg selv eller noen andre ut av en høyst prekær situasjon.",
+                    "Du bør ikke lyve, for løgn undergraver tillit mellom mennesker, og tillit er viktig for at samfunnet skal fungere.",
+                    "Du bør ikke lyve, da dette er å krenke den verdigheten som alle personer har krav på å få respektert."
+                ],
+                answer: 0,
+                feedback: "Kants universalitetsprinsipp sier at en handling kun kan være moralsk hvis alle kan gjøre det samme."
+            },
+            {
+                question: "Hvilken av de følgende begrunnelsene for å gi til veldedige formål er mest nærliggende for en dydsetiker?",
+                options: [
+                    "Sjenerøsitet er et godt karaktertrekk, og sjenerøse mennesker gir til veldedige formål når de selv har mer enn de trenger.",
+                    "Sammenlignet med å bruke penger på eget luksusforbruk, utgjør det et større velferdsbidrag om vi gir pengene til en organisasjon som jobber for de fattige i samfunnet.",
+                    "Vi bør hjelpe de som er dårligere stilt enn oss selv, for det ville vi selv ønsket hvis vi var blant de dårligst stilte.",
+                    "Vi har plikt til å hjelpe andre opp til et velferdsnivå som er tilstrekkelig for at de kan leve godt."
+                ],
+                answer: 0,
+                feedback: "Dydsetikk fokuserer på karaktertrekk, og sjenerøsitet er et godt karaktertrekk som innebærer å gi."
+            },
+            {
+                question: "Hva er paternalisme?",
+                options: [
+                    "Å begrense noens handlefrihet med henvisning til at det er til deres eget beste.",
+                    "En ideologi som sier at far bør bestemme i hjemmet.",
+                    "En form for prestestyre som brukes i den katolske kirken.",
+                    "Å begrense noens handlefrihet med henvisning til guddommelig autoritet, eks. de ti bud ol."
+                ],
+                answer: 0,
+                feedback: "Paternalisme innebærer å begrense noens frihet for deres eget beste."
+            },
+            {
+                question: "Hvilken påstand beskriver best innholdet i J. S. Mills såkalte skadeprinsipp?",
+                options: [
+                    "Det er tillatt å bruke tvang mot myndige voksne kun for å hindre skade på andre.",
+                    "Det er rettferdig å straffe en person med skade tilsvarende den skaden vedkommende har forvoldt på andre.",
+                    "All straff bør ta sikte på å skade den som har begått en forbrytelse.",
+                    "Hvis man påfører noen skade, er det den forulempede parts ansvar å bevise skadens art og omfang."
+                ],
+                answer: 0,
+                feedback: "Skadeprinsippet sier at tvang kun er tillatt for å forhindre skade på andre."
+            },
+            {
+                question: "Hvilket av følgende statlige tiltak kan - i størst mulig grad - sies å sikre ytringsfrihet også som en positiv frihet?",
+                options: [
+                    "Å sikre gjennom utdanning at alle borgere så langt som mulig har den kompetansen som skal til for å forstå og kunne delta i det offentlige ordskiftet.",
+                    "Å kreve at alle borgere hvert år svarer på en spørreundersøkelse om politiske spørsmål slik at vi kan få en oversikt over hva ikke bare de som ytrer seg offentlig, men også hva gjennomsnittet av befolkningen faktisk mener.",
+                    "Å stramme inn begrensningene på ytringsfriheten slik at flere ytringer som oppfattes som krenkende eller blasfemisk forbys.",
+                    "Å fjerne alle begrensninger av ytringsfriheten som har med blasfemi eller ærekrenkelse å gjøre fra loven."
+                ],
+                answer: 0,
+                feedback: "Positiv frihet innebærer at individet får muligheten til å delta, og utdanning sikrer denne muligheten."
+            },
+            {
+                question: "Hvilket av alternativene under kan best beskrives som et uttrykk for politisk atomisme?",
+                options: [
+                    "Mennesker lever i samfunn først og fremst fordi det politiske fellesskapet er en nødvendig betingelse for å leve et godt liv. De pliktene vi har overfor staten og det politiske fellesskapet skal derfor bidra til at vi kan utvikle våre fornuftsevner og ta selvstendige livsvalg.",
+                    "Mennesker lever i samfunn først og fremst fordi livet utenfor et fellesskap er langt vanskeligere enn et liv innenfor. De pliktene staten har overfor sine borgere er derfor å sikre materiell velstand, politisk og religiøs frihet, samt selvutvikling gjennom statlig subsidiering av kulturbærende institusjoner.",
+                    "Mennesker lever i samfunn først og fremst for å tilfredsstille egne behov og interesser på en effektiv måte. De pliktene vi har overfor staten og det politiske fellesskapet er sånn sett underordnet de pliktene vi har overfor oss selv og andre individer.",
+                    "Mennesker lever i samfunn først og fremst fordi livet utenfor et fellesskap er langt vanskeligere enn et liv innenfor. De pliktene staten har overfor sine borgere er derfor å sikre at flest mulig kan leve ut sin individualitet, samtidig som de opplever tilhørighet til andre som deler deres verdier og livssyn."
+                ],
+                answer: 2,
+                feedback: "Politisk atomisme vektlegger individets interesser fremfor pliktene til samfunnet."
+            },        
+            {
                 question: "Hvordan forstår John Stuart Mill negativ frihet?",
                 options: [
                     "Som individets frihet til selvrealisering, begrenset av hensyn til samfunnets moralnormer",

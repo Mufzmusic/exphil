@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d6d7e3;
     margin: 0;
     padding: 20px;
     display: flex; /* Enable flexbox for centering */
@@ -8,7 +7,49 @@ body {
     height: auto; /* Take full height of the viewport */
     margin-top: 4%;
     text-align: left;
+    background-color: #e3e5ef; /* Mørk bakgrunn for kontrast */
 }
+
+
+#snowContainer {
+    position: fixed;
+    top: -200px;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: rgb(239, 247, 255);
+    font-size: 1em;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg); /* Start utenfor skjermen */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg); /* Beveger seg helt ned */
+        opacity: 0;
+    }
+}
+
+@keyframes drift {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(-20px); }
+}
+
 
 /* Start screen styles */
 #start-screen {
@@ -89,7 +130,7 @@ p {
     width: 100%; /* Set width to 100% of its parent */
     max-width: 600px; /* Limit max width to 600px */
     height: auto;
-    background: rgb(240, 240, 240);
+    background: rgb(236, 239, 240);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -224,4 +265,65 @@ button:hover {
 /* Red for incorrect answers */
 .incorrect-answer {
     background-color: #e57373;
+}
+
+#snowControl {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: rgb(236, 239, 240);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.snowflake-icon {
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.snowflake-icon.large {
+    font-size: 20px;
+}
+
+/* Style slideren */
+#snowSlider {
+    -webkit-appearance: none; /* Fjern standard stil */
+    width: 100px;
+    height: 8px; /* Høyde på sporet */
+    background: #d0e7ff; /* Bakgrunnsfarge for sporet */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+/* Hover-effekt for slideren */
+#snowSlider:hover {
+    opacity: 1;
+}
+
+/* Stil for tommelkontrollen */
+#snowSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Bredde på tommelkontrollen */
+    height: 20px;
+    background: #6417ff; /* Farge på tommelkontrollen */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tommelkontroll for Firefox */
+#snowSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #6417ff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }

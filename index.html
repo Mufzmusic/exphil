@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div id="snowContainer"></div>
     <div class="container">
         <!-- Start screen -->
         <div id="start-screen">
@@ -48,6 +49,10 @@
         </div>
         
     </div>
-    
+    <div id="snowControl">
+        <span class="snowflake-icon">❄️</span>
+        <input type="range" id="snowSlider" min="1" max="100" value="50">
+        <span class="snowflake-icon large">❄️</span>
+    </div>
 </body>
 </html>
